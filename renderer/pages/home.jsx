@@ -69,7 +69,7 @@ const Home = () => {
         </h2>
         <h3 className="text-center">
           Detect the presence of Intel vPro and the status of Intel AMT in your
-          computer
+          computer.
         </h3>
         <div className="flex justify-center pt-8">
           {!loading && !loaded && (
