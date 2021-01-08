@@ -63,7 +63,7 @@ const Home = () => {
           type="image/x-icon"
         ></link>
       </Head>
-      <div>
+      <div id="page" class="fade-in">
         <h2 className="p-8 text-4xl font-semibold text-center">
           GCA Intel vPro Detector
         </h2>
@@ -82,6 +82,9 @@ const Home = () => {
           )}
           {loading && !loaded && <div class="lds-dual-ring"></div>}
         </div>
+      </div>
+      <div id="footer">
+            hello:)
       </div>
     </>
   );

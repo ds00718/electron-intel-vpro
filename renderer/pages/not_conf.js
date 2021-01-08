@@ -6,7 +6,7 @@ export default function Double_None() {
         </h1>
         <p className="text-lg">
           To find out what AMT is, and how to set it up, please click {" "}
-          <a
+          <a target="_blank"
             href="https://www.intel.co.uk/content/www/uk/en/architecture-and-technology/vpro/vpro-platform-general.html"
             className="text-blue-500 underline"
           >
