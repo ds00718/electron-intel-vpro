@@ -2,7 +2,7 @@ export default function Double_None() {
   return (
     <div className="text-center">
       <h1 className="pt-12 pb-12 text-4xl font-semibold">
-        You don't have Intel vPro
+        It looks like your computer is not compatable with AMT.
       </h1>
       <p className="text-lg">
         You can find out more about vPro{" "}
@@ -10,7 +10,7 @@ export default function Double_None() {
           href="https://www.intel.co.uk/content/www/uk/en/architecture-and-technology/vpro/vpro-platform-general.html"
           className="text-blue-500 underline"
         >
-          here
+          here.
         </a>
       </p>
     </div>

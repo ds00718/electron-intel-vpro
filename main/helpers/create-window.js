@@ -74,7 +74,11 @@ export default function createWindow(windowName, options) {
       ...options.webPreferences,
     },
   });
-
+  win.removeMenu()
+  win.webContents.on('new-window', function(e, url) {
+    e.preventDefault();
+    require('electron').shell.openExternal(url);
+  });
   win.on('close', saveState);
 
   return win;

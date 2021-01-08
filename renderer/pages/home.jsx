@@ -81,34 +81,6 @@ const Home = () => {
             </button>
           )}
           {loading && !loaded && <div class="lds-dual-ring"></div>}
-          {loaded && (
-            <div className="flex flex-col items-center">
-              <table class="table-auto text-lg">
-                <thead>
-                  <tr>
-                    <th class="px-4 py-2">Property</th>
-                    <th class="px-4 py-2">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="border px-4 py-2">exist</td>
-                    <td class="border px-4 py-2">{exist}</td>
-                  </tr>
-                  <tr>
-                    <td class="border px-4 py-2">state</td>
-                    <td class="border px-4 py-2">{status}</td>
-                  </tr>
-                </tbody>
-              </table>
-              <button
-                className="w-24 py-2 mt-12 font-semibold border border-red-600 rounded hover:bg-red-400 "
-                onClick={reset}
-              >
-                Reset
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </>
