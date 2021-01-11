@@ -73,18 +73,33 @@ const Home = () => {
         </h3>
         <div className="flex justify-center pt-8">
           {!loading && !loaded && (
+            <div class="vertical-center">
             <button
               className="px-6 py-4 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded hover:bg-blue-500 hover:text-white hover:border-transparent"
               onClick={fetchvpro}
+              
             >
               Run Test
             </button>
+            </div>
           )}
           {loading && !loaded && <div class="lds-dual-ring"></div>}
         </div>
       </div>
       <div id="footer">
-            hello:)
+            <p>GCA and Intel care about your privacy. View the&nbsp;  
+            <a target="_blank"
+            href="https://www.globalcyberalliance.org/privacy-policy/#:~:text=Privacy%20Policy.%20The%20mission%20of%20the%20Global%20Cyber,this%20Website,%20and%20this%20policy%20discusses%20our%20practices."
+            className="text-blue-500 underline">
+            GCA
+          </a>
+          &nbsp;and&nbsp;
+          <a target="_blank"
+          href="https://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html"
+          className="text-blue-500 underline">
+          Intel
+          </a>&nbsp;Privacy Policies.
+          </p>
       </div>
     </>
   );

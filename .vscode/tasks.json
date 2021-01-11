@@ -5,6 +5,7 @@
       "type": "npm",
       "script": "dev",
       "isBackground": true,
+
       "problemMatcher": {
         "owner": "custom",
         "pattern": {
@@ -19,3 +20,4 @@
     }
   ]
 }
+
