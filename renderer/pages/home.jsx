@@ -10,12 +10,6 @@ const Home = () => {
   const [status, setStatus] = useState("");
   const [exist, setExist] = useState("");
 
-  function reset() {
-    setLoading(false);
-    setLoaded(false);
-    setStatus("false");
-    setExist("");
-  }
 
   function fetchvpro() {
     setLoading(true);
@@ -44,6 +38,9 @@ const Home = () => {
           if (valExist === "true" && valStatus === "configured") {
             Router.push("./all_set");
           }
+          if (valExist === "true" && valStatus === "not configured") {
+            Router.push("./not_conf");
+          }
           setStatus(valStatus);
           setExist(valExist);
         }
@@ -63,19 +60,18 @@ const Home = () => {
           type="image/x-icon"
         ></link>
       </Head>
-      <div id="page" class="fade-in">
+      <div id="page" className="fade-in">
         <h2 className="p-8 text-4xl font-semibold text-center">
           GCA Intel vPro Detector
         </h2>
         <h3 className="text-center">
-          Detect the presence of Intel vPro and the status of Intel AMT in your
-          computer.
+          Use the button below to find the vPro and AMT™ status of your machine.
         </h3>
         <div className="flex justify-center pt-8">
           {!loading && !loaded && (
-            <div class="vertical-center">
+            <div className="vertical-center">
             <button
-              className="px-6 py-4 font-semibold text-blue-700 bg-transparent border border-blue-500 rounded hover:bg-blue-500 hover:text-white hover:border-transparent"
+              className="px-6 py-4 font-semibold text-blue-700 bg-blue-500 border border-blue-500 rounded hover:bg-blue-500 hover:text-white hover:border-transparent"
               onClick={fetchvpro}
               
             >
@@ -98,7 +94,7 @@ const Home = () => {
           href="https://www.intel.com/content/www/us/en/privacy/intel-privacy-notice.html"
           className="text-blue-500 underline">
           Intel
-          </a>&nbsp;Privacy Policies.
+          </a>&nbsp;Privacy Policies here.
           </p>
       </div>
     </>

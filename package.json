@@ -2,13 +2,14 @@
   "name": "intel-vpro-detector",
   "description": "An application to detect Intel vPro",
   "version": "1.0.3",
-  "author": "Sam Robbins",
-  "main": "app/background.js",
+  "author": "GCA",
+  "main": "app/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/samrobbins85/electron-intel-vpro.git"
+    "url": "https://github.com/ds00718/electron-intel-vpro.git"
   },
   "scripts": {
+    "main": "nextron",
     "dev": "nextron",
     "build": "nextron build"
   },

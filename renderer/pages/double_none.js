@@ -2,12 +2,12 @@ export default function Double_None() {
   return (
     <div className="text-center">
       <h1 className="pt-12 pb-12 text-4xl font-semibold">
-        It looks like your computer is not compatable with AMT.
+        This machine is not vPro or AMT™ compatable.
       </h1>
       <p className="text-lg">
-        You can find out more about vPro{" "}
+        To find the latest range of vPro processors, and the advatages of vPro and the AMT™ solution, visit Intel's website{" "}
         <a target="_blank"
-          href="https://www.intel.co.uk/content/www/uk/en/architecture-and-technology/vpro/vpro-platform-general.html"
+          href="https://www.intel.co.uk/content/www/uk/en/products/processors/core/core-vpro.html"
           className="text-blue-500 underline"
         >
           here.

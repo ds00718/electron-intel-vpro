@@ -3,10 +3,10 @@ export default function Double_None() {
     <div className="text-center">
       <div  id="page">
         <h1 className="pt-12 pb-12 text-4xl font-semibold">
-          You have Intel vPro and Intel AMT is set up.
+          The machine is vPro approved, and AMT™ is running.
         </h1>
         <p className="text-lg">
-          You can find out more about vPro{" "}
+          To learn more about what AMT™ has to offer, press{" "}
           <a target="_blank"
             href="https://www.intel.co.uk/content/www/uk/en/architecture-and-technology/vpro/vpro-platform-general.html"
             className="text-blue-500 underline"
