@@ -11,7 +11,15 @@
   "scripts": {
     "main": "nextron",
     "dev": "nextron",
-    "build": "nextron build"
+    "dist": "nextron build"
+  },
+  "build":{
+    "appId": "com.app.detector.vpro",
+    "win":{
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
+
   },
   "dependencies": {
     "electron-serve": "^1.0.0",
