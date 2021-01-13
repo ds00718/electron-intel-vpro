@@ -3,7 +3,7 @@
   "description": "An application to detect Intel vPro",
   "version": "1.0.3",
   "author": "GCA",
-  "main": "main/background.js",
+  "main": "app/background.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ds00718/electron-intel-vpro.git"
