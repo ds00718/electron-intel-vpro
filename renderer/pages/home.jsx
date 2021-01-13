@@ -4,11 +4,14 @@ import Router from "next/router";
 import { useState } from "react";
 var sudo = require("sudo-prompt");
 
+
+
 const Home = () => {
   const [loading, setLoading] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [status, setStatus] = useState("");
   const [exist, setExist] = useState("");
+
 
 
   function fetchvpro() {
@@ -17,7 +20,7 @@ const Home = () => {
       name: "Electron",
       icns: "/Applications/Electron.app/Contents/Resources/Electron.icns", // (optional)
     };
-    sudo.exec("C:\\Users\\Intel\\AppData\\Local\\Programs\\intel-vpro-detector\\PlatformDiscovery.exe", options, function (
+    sudo.exec(process.resourcesPath + '\\..\\extraResources\\PlatformDiscovery.exe', options, function (
       error,
       stdout,
       stderr
