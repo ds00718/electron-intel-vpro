@@ -20,7 +20,7 @@ const Home = () => {
       name: "Electron",
       icns: "/Applications/Electron.app/Contents/Resources/Electron.icns", // (optional)
     };
-    sudo.exec(process.resourcesPath + '\\..\\extraResources\\PlatformDiscovery.exe', options, function (
+    sudo.exec(process.resourcesPath + '\\extraResources\\PlatformDiscovery.exe', options, function (
       error,
       stdout,
       stderr
