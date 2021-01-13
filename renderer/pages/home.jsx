@@ -17,7 +17,7 @@ const Home = () => {
       name: "Electron",
       icns: "/Applications/Electron.app/Contents/Resources/Electron.icns", // (optional)
     };
-    sudo.exec("PlatformDiscovery.exe", options, function (
+    sudo.exec("C:\\Users\\Intel\\AppData\\Local\\Programs\\intel-vpro-detector\\PlatformDiscovery.exe", options, function (
       error,
       stdout,
       stderr
