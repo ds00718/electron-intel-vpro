@@ -9,17 +9,8 @@
     "url": "https://github.com/ds00718/electron-intel-vpro.git"
   },
   "scripts": {
-    "main": "nextron",
     "dev": "nextron",
     "dist": "nextron build"
-  },
-  "build":{
-    "appId": "com.app.detector.vpro",
-    "win":{
-      "target": "nsis",
-      "icon": "build/icon.ico"
-    },
-    "extraResources": ["./extraResources/**"]
   },
   "dependencies": {
     "electron-serve": "^1.0.0",
@@ -27,16 +18,16 @@
     "sudo-prompt": "^9.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.0",
+    "@babel/core": "^7.12.10",
     "babel-loader": "^8.2.2",
-    "electron": "^11.1.1",
+    "electron": "^11.2.0",
     "electron-builder": "^22.9.1",
     "next": "10.0.1",
-    "nextron": "^5.15.3",
+    "nextron": "6.0.0",
     "postcss-preset-env": "^6.7.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "tailwindcss": "^1.9.0",
-    "webpack": "^4.44.2"
+    "tailwindcss": "^1.9.6",
+    "webpack": "^4.46.0"
   }
 }

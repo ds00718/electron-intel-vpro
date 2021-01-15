@@ -3,7 +3,6 @@ import Head from "next/head";
 import Router from "next/router";
 import { useState } from "react";
 var sudo = require("sudo-prompt");
-var path = require("path");
 
 
 
@@ -17,13 +16,12 @@ const Home = () => {
 
 
   function fetchvpro() {
-    const configFile = path.join(process.cwd(), 'extraResources','PlatformDiscovery.exe');
     setLoading(true);
     var options = {
       name: "Electron",
       icns: "/Applications/Electron.app/Contents/Resources/Electron.icns", // (optional)
     };
-    sudo.exec(configFile, options, function (
+    sudo.exec('PlatformDiscovery.exe', options, function (
       error,
       stdout,
       stderr

@@ -1,6 +1,6 @@
-appId: com.samrobbins.intelvpro
+appId: com.discovery.intelvpro
 productName: Intel vPro Detector
-copyright: Sam Robbins
+copyright: GCA 2021
 directories:
   output: dist
   buildResources: resources
