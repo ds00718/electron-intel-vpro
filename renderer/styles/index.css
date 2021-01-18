@@ -1,5 +1,4 @@
-
-body{
+body {
   background-image: url("./images/gca_opaque.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -9,16 +8,17 @@ body{
   font-size: 15px;
   text-align: center;
   height: 30px;
- }
- #page {
+}
+#page {
   height: calc(100vh - 30px);
- }
- .vertical-center {
+}
+.vertical-center {
   margin: 0;
   position: absolute;
   top: 50%;
   text-align: center;
-  display: block; margin: auto;
+  display: block;
+  margin: auto;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -68,45 +68,45 @@ body{
 
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-moz-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 @-ms-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
 @-o-keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -118,4 +118,3 @@ body{
   align-items: center;
   align-content: center;
 }
-
