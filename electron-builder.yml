@@ -11,7 +11,7 @@ files:
       - app
 win:
   target:
-    - "portable"
+    - "nsis"
   publish:
     - github
 extraFiles:
