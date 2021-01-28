@@ -55,7 +55,7 @@ const Home = () => {
     <React.Fragment>
       <>
         <Head>
-          <title>GCA Intel vPro Detector</title>
+          <title> GCA Intel® Core™ vPro® Detector</title>
           <link
             rel="shortcut icon"
             href="./images/GCA.png"
@@ -69,9 +69,9 @@ const Home = () => {
             </h2>
           </Link>
           <h3 className="text-center">
-            Use the button below to find the vPro and AMT™ status of your
-            machine.
+          Use the button below to find out if your PC is a vPro platform and whether it has remote management capabilities enabled by Intel Active Management Technology®
           </h3>
+          <img> </img>
           <div className="flex justify-center pt-8">
             {!loading && !loaded && (
               <div className="vertical-center">
@@ -88,7 +88,7 @@ const Home = () => {
         </div>
         <div id="footer">
           <p>
-            GCA and Intel care about your privacy. View the&nbsp;
+          No information is collected from the download or use of this tool. GCA and Intel care about your privacy. View the&nbsp;
             <a
               target="_blank"
               href="https://www.globalcyberalliance.org/privacy-policy/#:~:text=Privacy%20Policy.%20The%20mission%20of%20the%20Global%20Cyber,this%20Website,%20and%20this%20policy%20discusses%20our%20practices."
