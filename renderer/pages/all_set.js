@@ -2,7 +2,12 @@ export default function Double_None() {
   return (
     <div className="text-center">
       <div id="page">
-        <h1 className="pt-12 pb-12 text-4xl font-semibold">
+      <h2 className="p-8 text-4xl font-semibold text-center">
+            <img className = "leftPhoto" src="./images/GCA.png"/>
+            GCA Intel® Core™ vPro® Detector
+            <img className="rightPhoto" src="./images/thumbnail.jpg" />
+            </h2>
+        <h1 className="pt-10 pb-10 text-3xl font-semibold">
         The PC is vPro certified, and Active Management Technology has been configured for remote support.        </h1>
         <p className="text-lg">
         To learn more about AMT™, press          <a
@@ -32,7 +37,7 @@ export default function Double_None() {
             >
               Intel
             </a>
-            &nbsp;Privacy Policies here.
+            &nbsp;Privacy Policies.
           </p>
         </div>
     </div>

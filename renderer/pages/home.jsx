@@ -63,15 +63,14 @@ const Home = () => {
           ></link>
         </Head>
         <div id="page" className="fade-in">
-          <Link href="/all_set">
             <h2 className="p-8 text-4xl font-semibold text-center">
-              GCA Intel vPro Detector TEST
+            <img className = "leftPhoto" src="./images/GCA.png"/>
+            GCA Intel® Core™ vPro® Detector
+            <img className="rightPhoto" src="./images/thumbnail.jpg" />
             </h2>
-          </Link>
           <h3 className="text-center">
           Use the button below to find out if your PC is a vPro platform and whether it has remote management capabilities enabled by Intel Active Management Technology®
           </h3>
-          <img> </img>
           <div className="flex justify-center pt-8">
             {!loading && !loaded && (
               <div className="vertical-center">
