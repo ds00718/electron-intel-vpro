@@ -36,7 +36,7 @@ const Home = () => {
               return;
             }
             if (valExist === "true" && valStatus === "configured") {
-              Router.push("./all_set");
+              Router.push("./all_set2");
             }
             if (valExist === "true" && valStatus === "not configured") {
               Router.push("./not_conf");

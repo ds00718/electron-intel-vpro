@@ -7,17 +7,22 @@ export default function Double_None() {
             GCA Intel® Core™ vPro® Detector
             <img className="rightPhoto" src="./images/thumbnail.jpg" />
             </h2>
-        <h1 className="pt-10 pb-10 text-3xl font-semibold">
-        The PC is vPro certified, and Active Management Technology has been configured for remote support.        </h1>
-        <p className="text-lg">
-        To learn more about AMT™, press          <a
+
+      <button className ="collapsible">vPro®</button>
+      <div className ="content">
+        <p> This PC is vPro certified, and is recieving additional security protection. </p>
+      </div>
+      <button className ="collapsible">AMT</button>
+      <div className ="content">
+        <p> Intel Active Management Technology has been configured for remote support. Learn more about AMT™, <a
             target="_blank"
             href="https://www.intel.co.uk/content/www/uk/en/architecture-and-technology/vpro/vpro-platform-general.html"
             className="text-blue-500 underline"
           >
             here
-          </a>
-        </p>
+          </a> </p>
+      </div>
+
       </div>
       <div id="footer">
           <p>
@@ -40,6 +45,9 @@ export default function Double_None() {
             &nbsp;Privacy Policies.
           </p>
         </div>
+        <script></script>
     </div>
+    
   );
+  
 }
