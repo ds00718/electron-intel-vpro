@@ -15,14 +15,27 @@ body {
 
 .leftPhoto {
   float: left;
-  padding: 0 20px 20px 0;
-  width: 120px;
-  height: 120px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0;
+  padding-right: 0px;
+  width: 100px;
+  height: 100px;
+}
+.line{
+  padding-top: 25%;
+  position: absolute;
 }
 
+.heading{
+  height: 20%;
+}
 .rightPhoto {
   float: right;
-  padding: 0 20px 20px 0;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0;
+  padding-right: 0px;
   width: 120px;
   height: 100px;
 }
@@ -125,47 +138,61 @@ body {
   }
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
+.Collapsible {
+  width: 33vw;
+  background-color: rgb(71, 120, 194);
   text-align: left;
-  outline: none;
-  font-size: 15px;
 }
+.Collapsible__contentInner {
+  padding: 10px;
+  border: 1px solid lightGrey;
+  border-top: 0;
 
-.active, .collapsible:hover {
-  background-color: #555;
+  p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+
+  &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
-
-.collapsible:after {
-  content: '\002B';
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+  border: 1px solid white;
+  padding: 10px;
+  background: rgb(35, 150, 245);
   color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+
+
+  &:after {
+    font-family: 'FontAwesome';
+    content: '▶';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 200ms;
+  }
+
+  &.is-open {
+    &:after {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }
+}
+.p_mp{
+  width: 66%;
+  text-align: center;
 }
 
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}

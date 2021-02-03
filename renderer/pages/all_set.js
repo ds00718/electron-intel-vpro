@@ -5,7 +5,7 @@ export default function Double_None() {
       <h2 className="p-8 text-4xl font-semibold text-center">
             <img className = "leftPhoto" src="./images/GCA.png"/>
             GCA Intel® Core™ vPro® Detector
-            <img className="rightPhoto" src="./images/thumbnail.jpg" />
+            <img className="rightPhoto" src="./images/thumbnail.png" />
             </h2>
 
       <button className ="collapsible">vPro®</button>

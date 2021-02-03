@@ -15,6 +15,34 @@ export default function Double_None() {
         </a>
       </p>
     </div>
+    <div className="flex justify-center pt-8">
+          <div className="vertical-center">
+          <Collapsible trigger="vPro®" transitionTime="200">
+              <p>
+              Unfortunatly this PC is not a vPro based device. To find out more about the Intel vPro platform, the benefits and to see a range of devices please visit the Intel website{" "}
+        <a
+          target="_blank"
+          href="http://www.intel.com/vPro"
+          className="text-blue-500 underline"
+        >
+          here.
+        </a>
+              </p>
+            </Collapsible>
+            <Collapsible trigger="AMT" transitionTime="200">
+              <p>
+                Intel Active Management Technology is not compatable with this computer. Learn more about the benefits of AMT™,{" "}
+                <a
+                  target="_blank"
+                  href="https://www.intel.co.uk/content/www/uk/en/architecture-and-technology/vpro/vpro-platform-general.html"
+                  className="text-blue-500 underline"
+                >
+                  here
+                </a>
+              </p>
+            </Collapsible>
+          </div>
+        </div>
     <div id="footer">
     <p>
     No information is collected from the download or use of this tool. GCA and Intel care about your privacy. View the&nbsp;

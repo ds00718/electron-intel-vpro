@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Router from "next/router";
-import Link from "next/link";
 import { useState } from "react";
 var sudo = require("sudo-prompt");
 
@@ -62,16 +61,23 @@ const Home = () => {
             type="image/x-icon"
           ></link>
         </Head>
+
         <div id="page" className="fade-in">
-            <h2 className="p-8 text-4xl font-semibold text-center">
-            <img className = "leftPhoto" src="./images/GCA.png"/>
-            GCA Intel® Core™ vPro® Detector
+          <div className="heading">
+          <h1 className="p-8 text-4xl font-semibold text-center ">
+            <img className="leftPhoto" src="./images/GCA.png" />
             <img className="rightPhoto" src="./images/thumbnail.jpg" />
-            </h2>
-          <h3 className="text-center">
-          Use the button below to find out if your PC is a vPro platform and whether it has remote management capabilities enabled by Intel Active Management Technology®
-          </h3>
+            GCA Intel® Core™ vPro® Detector
+          </h1>
+          <hr></hr>
+          </div>
+
           <div className="flex justify-center pt-8">
+          <p className="p_mp">
+                  Use the button below to find out if your PC is a vPro platform
+                  and whether it has remote management capabilities enabled by
+                  Intel Active Management Technology®
+                </p>
             {!loading && !loaded && (
               <div className="vertical-center">
                 <button
@@ -87,7 +93,8 @@ const Home = () => {
         </div>
         <div id="footer">
           <p>
-          No information is collected from the download or use of this tool. GCA and Intel care about your privacy. View the&nbsp;
+            No information is collected from the download or use of this tool.
+            GCA and Intel care about your privacy. View the&nbsp;
             <a
               target="_blank"
               href="https://www.globalcyberalliance.org/privacy-policy/#:~:text=Privacy%20Policy.%20The%20mission%20of%20the%20Global%20Cyber,this%20Website,%20and%20this%20policy%20discusses%20our%20practices."
